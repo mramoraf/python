@@ -40,9 +40,9 @@ import hello
 # result = math.sqrt(c)
 
 
-hello.say_hello('Taya')
+# hello.say_hello('Taya')
 
-greetings('Ivan')
+# greetings('Ivan')
 
 
 
