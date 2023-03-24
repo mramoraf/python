@@ -53,3 +53,6 @@
 # for char in new_symbols[:3]:
 #     print(f'{char[0]} - {char[1]}')
 
+
+
+
