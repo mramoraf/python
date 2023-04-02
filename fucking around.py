@@ -56,3 +56,17 @@
 
 
 
+# CLASS 20 'WHILE LOOP'
+
+# a = 5 
+# while a != 0:
+#     print(a)
+#     a -= 1
+
+
+# while True:
+#     username = input('Enter ur name: ')
+#     if username == '0':
+#         break
+#     else:
+#         print(username)
