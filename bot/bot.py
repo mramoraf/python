@@ -4,9 +4,15 @@ from keyboards import *
 from films import films
 from aiogram.dispatcher import FSMContext
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
+import os
+from dotenv import load_dotenv
 
 
-TOKEN = '6071969222:AAGnfS3N9P2Hh2aUJKv84t2H1bUvs-3Q2kc'
+load_dotenv()
+
+
+TOKEN = os.getenv('TOKEN')
+
 
 logging.basicConfig(level=logging.INFO)
 
