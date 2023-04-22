@@ -21,6 +21,16 @@ dp = Dispatcher(bot, storage=MemoryStorage())
 
 ADMINS = [1338535362]
 
+
+async def set_default_commands(dp):
+    await dp.bot.set_my_commands(
+        [
+        types.BotCommand('start', 'Start the bot'),
+        types.BotCommand('add_film', 'Add a new film')
+        ]
+    )
+
+
 @dp.message_handler(commands ='start')
 async def start(message: types.message):
     film_choice = InlineKeyboardMarkup()
@@ -111,9 +121,10 @@ async def set_rating(message: types.Message, state=FSMContext):
     await message.answer(text='Супер. Новий фільм успішно додано до бібліотеки.')
 
 
-
+async def on_startup(dp):
+    await set_default_commands(dp)
 
 
 
 if __name__ == '__main__':
-    executor.start_polling(dp)
+    executor.start_polling(dp, on_startup=on_startup) 
