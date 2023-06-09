@@ -195,3 +195,7 @@ pyrightconfig.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode
+
+
+vosk-model-en-us-daanzu-20200905-lgraph
+vosk-model-uk-v3-lgraph
