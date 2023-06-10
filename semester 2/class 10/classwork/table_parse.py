@@ -34,4 +34,11 @@ rows = table.find_all('tr')
 for row in rows[1:]:
     cell = row.find_all('td')
     table_row = [item.text for item in cell]
+    l = len(new_table)
+    new_table.loc[l]= table_row
+    
+
+
+with pd.ExcelWriter('data_types.xlsx') as writer:
+    new_table.to_excel(writer, index=False)
 
