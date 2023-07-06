@@ -55,7 +55,7 @@
 
 
 # @dp.message_handler(content_types=types.ContentTypes.STICKER)
-# async def echo_sticher(message: types.Message):
+# async def echo_sticker(message: types.Message):
 #     await message.answer_sticker(message.sticker.file_id)
 
 
